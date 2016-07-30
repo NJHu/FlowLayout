@@ -21,7 +21,7 @@
 {
     if(_imageView == nil)
     {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        UIImageView *imageView = [[UIImageView alloc] init];
         
         [self.contentView addSubview:imageView];
         
@@ -35,6 +35,13 @@
     _image = image;
     
     self.imageView.image = image;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.imageView.frame = self.bounds;
 }
 
 @end
