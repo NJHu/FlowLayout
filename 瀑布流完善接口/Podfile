@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+
+target "瀑布流完善接口" do
+
+
+pod 'SDWebImage'
+
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'AFNetworking'
+pod 'SVProgressHUD'
+
+end
