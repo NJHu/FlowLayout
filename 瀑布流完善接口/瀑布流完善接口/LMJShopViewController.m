@@ -59,9 +59,9 @@ static NSString *const shopId = @"shop";
     [self.collectionView.mj_header beginRefreshing];
     
     
-    
     self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerPull)];
     self.collectionView.mj_footer.automaticallyHidden = YES;
+    self.collectionView.mj_footer.automaticallyChangeAlpha = YES;
 
 }
 
@@ -236,22 +236,22 @@ static NSString *const shopId = @"shop";
 
 - (NSInteger)waterflowLayoutOfColumns:(LMJWaterflowLayout *)waterflowLayout
 {
-    return 2;
+    return 3;
 }
 
 - (CGFloat)waterflowLayouOftMarginBetweenColumns:(LMJWaterflowLayout *)waterflowLayout
 {
-    return 44;
+    return 10;
 }
 
 - (CGFloat)waterflowLayoutOfMarginBetweenLines:(LMJWaterflowLayout *)waterflowLayout
 {
-    return 100;
+    return 10;
 }
 
 - (UIEdgeInsets)waterflowLayoutOfEdgeInsets:(LMJWaterflowLayout *)waterflowLayout
 {
-    return UIEdgeInsetsMake(44, 44, 44, 44);
+    return UIEdgeInsetsMake(20, 10, 10, 10);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
