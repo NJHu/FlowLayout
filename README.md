@@ -2,7 +2,7 @@
 
 ## 主要是以代理的方式去实现
 
-### JD商城首页布局
+### JD京东商城首页布局
 
 <img src="./images/jdHome.png" width="200" height="300">
 
