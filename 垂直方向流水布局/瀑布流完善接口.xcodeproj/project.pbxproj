@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18BD1ADC1D4D918C0052A363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1ADB1D4D918C0052A363 /* main.m */; };
+		18BD1ADF1D4D918C0052A363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1ADE1D4D918C0052A363 /* AppDelegate.m */; };
+		18BD1AE71D4D918C0052A363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD1AE61D4D918C0052A363 /* Assets.xcassets */; };
+		18BD1AEA1D4D918C0052A363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD1AE81D4D918C0052A363 /* LaunchScreen.storyboard */; };
+		18BD1AF21D4D91AF0052A363 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BD1AF11D4D91AF0052A363 /* 1.plist */; };
+		18BD1AF61D4D92DA0052A363 /* LMJShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AF51D4D92DA0052A363 /* LMJShopViewController.m */; };
+		18BD1AF91D4D93310052A363 /* LMJVerticalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AF81D4D93310052A363 /* LMJVerticalFlowLayout.m */; };
+		18BD1AFC1D4D969A0052A363 /* LMJShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AFB1D4D969A0052A363 /* LMJShop.m */; };
+		18BD1B001D4D97390052A363 /* LMJShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AFE1D4D97390052A363 /* LMJShopCell.m */; };
+		18BD1B011D4D97390052A363 /* LMJShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BD1AFF1D4D97390052A363 /* LMJShopCell.xib */; };
+		97F1A9B63BB5F0DB59BCE4D9 /* libPods-瀑布流完善接口.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B3973BFFCC97CE3387B0A4 /* libPods-瀑布流完善接口.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18BD1AD71D4D918C0052A363 /* 瀑布流完善接口.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瀑布流完善接口.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BD1ADB1D4D918C0052A363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18BD1ADD1D4D918C0052A363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18BD1ADE1D4D918C0052A363 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18BD1AE61D4D918C0052A363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BD1AE91D4D918C0052A363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18BD1AEB1D4D918C0052A363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BD1AF11D4D91AF0052A363 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		18BD1AF41D4D92DA0052A363 /* LMJShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJShopViewController.h; sourceTree = "<group>"; };
+		18BD1AF51D4D92DA0052A363 /* LMJShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJShopViewController.m; sourceTree = "<group>"; };
+		18BD1AF71D4D93310052A363 /* LMJVerticalFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJVerticalFlowLayout.h; sourceTree = "<group>"; };
+		18BD1AF81D4D93310052A363 /* LMJVerticalFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJVerticalFlowLayout.m; sourceTree = "<group>"; };
+		18BD1AFA1D4D969A0052A363 /* LMJShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJShop.h; sourceTree = "<group>"; };
+		18BD1AFB1D4D969A0052A363 /* LMJShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJShop.m; sourceTree = "<group>"; };
+		18BD1AFD1D4D97390052A363 /* LMJShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJShopCell.h; sourceTree = "<group>"; };
+		18BD1AFE1D4D97390052A363 /* LMJShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJShopCell.m; sourceTree = "<group>"; };
+		18BD1AFF1D4D97390052A363 /* LMJShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMJShopCell.xib; sourceTree = "<group>"; };
+		95B3973BFFCC97CE3387B0A4 /* libPods-瀑布流完善接口.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-瀑布流完善接口.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D578BDB81D8ABA7C03C1E0 /* Pods-瀑布流完善接口.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流完善接口.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流完善接口/Pods-瀑布流完善接口.debug.xcconfig"; sourceTree = "<group>"; };
+		F05A8AF15F39A116E8CACDDE /* Pods-瀑布流完善接口.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流完善接口.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流完善接口/Pods-瀑布流完善接口.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BD1AD41D4D918C0052A363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F1A9B63BB5F0DB59BCE4D9 /* libPods-瀑布流完善接口.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BD1ACE1D4D918C0052A363 = {
+			isa = PBXGroup;
+			children = (
+				18BD1AD91D4D918C0052A363 /* 瀑布流完善接口 */,
+				18BD1AD81D4D918C0052A363 /* Products */,
+				B6C1B5021BFD5FA50503EC71 /* Pods */,
+				9935E7E6635A4D29FAB1B4B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18BD1AD81D4D918C0052A363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1AD71D4D918C0052A363 /* 瀑布流完善接口.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BD1AD91D4D918C0052A363 /* 瀑布流完善接口 */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1AF31D4D92700052A363 /* LMJWaterflowLayout */,
+				18BD1AF41D4D92DA0052A363 /* LMJShopViewController.h */,
+				18BD1AF51D4D92DA0052A363 /* LMJShopViewController.m */,
+				18BD1AFA1D4D969A0052A363 /* LMJShop.h */,
+				18BD1AFB1D4D969A0052A363 /* LMJShop.m */,
+				18BD1AFD1D4D97390052A363 /* LMJShopCell.h */,
+				18BD1AFE1D4D97390052A363 /* LMJShopCell.m */,
+				18BD1AFF1D4D97390052A363 /* LMJShopCell.xib */,
+				18BD1ADA1D4D918C0052A363 /* Supporting Files */,
+			);
+			path = "瀑布流完善接口";
+			sourceTree = "<group>";
+		};
+		18BD1ADA1D4D918C0052A363 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1ADE1D4D918C0052A363 /* AppDelegate.m */,
+				18BD1AF11D4D91AF0052A363 /* 1.plist */,
+				18BD1ADD1D4D918C0052A363 /* AppDelegate.h */,
+				18BD1AE61D4D918C0052A363 /* Assets.xcassets */,
+				18BD1AE81D4D918C0052A363 /* LaunchScreen.storyboard */,
+				18BD1AEB1D4D918C0052A363 /* Info.plist */,
+				18BD1ADB1D4D918C0052A363 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BD1AF31D4D92700052A363 /* LMJWaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1AF71D4D93310052A363 /* LMJVerticalFlowLayout.h */,
+				18BD1AF81D4D93310052A363 /* LMJVerticalFlowLayout.m */,
+			);
+			path = LMJWaterflowLayout;
+			sourceTree = SOURCE_ROOT;
+		};
+		9935E7E6635A4D29FAB1B4B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B3973BFFCC97CE3387B0A4 /* libPods-瀑布流完善接口.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C1B5021BFD5FA50503EC71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3D578BDB81D8ABA7C03C1E0 /* Pods-瀑布流完善接口.debug.xcconfig */,
+				F05A8AF15F39A116E8CACDDE /* Pods-瀑布流完善接口.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BD1AD61D4D918C0052A363 /* 瀑布流完善接口 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BD1AEE1D4D918C0052A363 /* Build configuration list for PBXNativeTarget "瀑布流完善接口" */;
+			buildPhases = (
+				78CCD08F5FF9AF1AD2CDCCD1 /* [CP] Check Pods Manifest.lock */,
+				18BD1AD31D4D918C0052A363 /* Sources */,
+				18BD1AD41D4D918C0052A363 /* Frameworks */,
+				18BD1AD51D4D918C0052A363 /* Resources */,
+				950D8D7DE24D0BDDBF3200B5 /* [CP] Embed Pods Frameworks */,
+				FBF86C64A33BC14CCC57383D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "瀑布流完善接口";
+			productName = "瀑布流完善接口";
+			productReference = 18BD1AD71D4D918C0052A363 /* 瀑布流完善接口.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BD1ACF1D4D918C0052A363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LMJ;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = NJHu;
+				TargetAttributes = {
+					18BD1AD61D4D918C0052A363 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 18BD1AD21D4D918C0052A363 /* Build configuration list for PBXProject "瀑布流完善接口" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BD1ACE1D4D918C0052A363;
+			productRefGroup = 18BD1AD81D4D918C0052A363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BD1AD61D4D918C0052A363 /* 瀑布流完善接口 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BD1AD51D4D918C0052A363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BD1AEA1D4D918C0052A363 /* LaunchScreen.storyboard in Resources */,
+				18BD1B011D4D97390052A363 /* LMJShopCell.xib in Resources */,
+				18BD1AE71D4D918C0052A363 /* Assets.xcassets in Resources */,
+				18BD1AF21D4D91AF0052A363 /* 1.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CCD08F5FF9AF1AD2CDCCD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		950D8D7DE24D0BDDBF3200B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流完善接口/Pods-瀑布流完善接口-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF86C64A33BC14CCC57383D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流完善接口/Pods-瀑布流完善接口-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BD1AD31D4D918C0052A363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BD1ADF1D4D918C0052A363 /* AppDelegate.m in Sources */,
+				18BD1AFC1D4D969A0052A363 /* LMJShop.m in Sources */,
+				18BD1ADC1D4D918C0052A363 /* main.m in Sources */,
+				18BD1B001D4D97390052A363 /* LMJShopCell.m in Sources */,
+				18BD1AF61D4D92DA0052A363 /* LMJShopViewController.m in Sources */,
+				18BD1AF91D4D93310052A363 /* LMJVerticalFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18BD1AE81D4D918C0052A363 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BD1AE91D4D918C0052A363 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BD1AEC1D4D918C0052A363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18BD1AED1D4D918C0052A363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BD1AEF1D4D918C0052A363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D578BDB81D8ABA7C03C1E0 /* Pods-瀑布流完善接口.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "瀑布流完善接口/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NJHu-gitHub.com.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18BD1AF01D4D918C0052A363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05A8AF15F39A116E8CACDDE /* Pods-瀑布流完善接口.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "瀑布流完善接口/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NJHu-gitHub.com.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BD1AD21D4D918C0052A363 /* Build configuration list for PBXProject "瀑布流完善接口" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BD1AEC1D4D918C0052A363 /* Debug */,
+				18BD1AED1D4D918C0052A363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BD1AEE1D4D918C0052A363 /* Build configuration list for PBXNativeTarget "瀑布流完善接口" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BD1AEF1D4D918C0052A363 /* Debug */,
+				18BD1AF01D4D918C0052A363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BD1ACF1D4D918C0052A363 /* Project object */;
+}
