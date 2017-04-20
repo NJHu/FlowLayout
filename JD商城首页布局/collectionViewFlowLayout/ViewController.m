@@ -87,6 +87,8 @@
 - (CGSize)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
+//    return CGSizeMake((indexPath.item % 10 + 1) * 30, (indexPath.item % 10 + 1) * 30);
+    
     if (indexPath.item == 0) {
         
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 150);
@@ -97,7 +99,7 @@
         
     }else if (indexPath.item == 2)
     {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width - 50, 60);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width * 0.38, 60);
         
     }else if (indexPath.item == 3)
     {
