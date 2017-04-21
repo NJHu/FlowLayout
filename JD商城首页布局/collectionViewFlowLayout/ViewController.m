@@ -64,9 +64,8 @@
 {
     if(_collectionView == nil)
     {
-        LMJElementsFlowLayout *myLayout = [[LMJElementsFlowLayout alloc] init];
-        
-        myLayout.delegate = self;
+        LMJElementsFlowLayout *myLayout = [[LMJElementsFlowLayout alloc] initWithDelegate:self];
+
         
         UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:myLayout];
         [self.view addSubview:collectionView];
@@ -84,7 +83,7 @@
 
 #pragma mark - LMJElementsFlowLayoutDelegate
 
-- (CGSize)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGSize)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
 //    return CGSizeMake((indexPath.item % 10 + 1) * 30, (indexPath.item % 10 + 1) * 30);
@@ -106,9 +105,31 @@
         return CGSizeMake([UIScreen mainScreen].bounds.size.width - 10, 300);
     }else
     {
-        return CGSizeMake(([UIScreen mainScreen].bounds.size.width - 30) * 0.5, ([UIScreen mainScreen].bounds.size.width - 30) * 0.5 * 0.8);
+        return CGSizeMake(([UIScreen mainScreen].bounds.size.width - 5) * 0.5, ([UIScreen mainScreen].bounds.size.width - 5) * 0.5 / 0.8);
     }
 }
+
+
+- (CGFloat)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView linesMarginForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.item <= 3) {
+        return 5;
+    }else
+    {
+        return 15;
+    }
+}
+
+- (CGFloat)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView columnsMarginForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 5;
+}
+
+- (UIEdgeInsets)waterflowLayout:(LMJElementsFlowLayout *)waterflowLayout edgeInsetsInCollectionView:(UICollectionView *)collectionView
+{
+    return UIEdgeInsetsMake(20, 0, 20, 0);
+}
+
 
 
 

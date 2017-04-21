@@ -52,7 +52,7 @@ static NSString *const shopId = @"shop";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 30;
+    return 100;
 }
 
 
@@ -83,41 +83,58 @@ static NSString *const shopId = @"shop";
 
 
 #pragma mark - <LMJVerticalFlowLayoutDelegate>
-- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth
+{
+    return ((arc4random()) % 7 + 1) * itemWidth;
+}
+
+/**
+ *  需要显示的列数, 默认3
+ */
+- (NSInteger)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout columnsInCollectionView:(UICollectionView *)collectionView
+{
+    return 4;
+}
+/**
+ *  列间距, 默认10
+ */
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout columnsMarginInCollectionView:(UICollectionView *)collectionView
+{
+    return 10;
+}
+/**
+ *  行间距, 默认10
+ */
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView linesMarginForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.item % 5) {
+        return 10;
+    }else
+    {
+        return 30;
+    }
+}
+
+/**
+ *  距离collectionView四周的间距, 默认{20, 10, 10, 10}
+ */
+- (UIEdgeInsets)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout edgeInsetsInCollectionView:(UICollectionView *)collectionView
 {
     
-    return ((arc4random()) % 4 + 1) * itemWidth;
+    return UIEdgeInsetsMake(20, 5, 40, 10);
 }
 
-- (NSInteger)waterflowLayoutOfColumns:(LMJVerticalFlowLayout *)waterflowLayout
-{
-    return 3;
-}
 
-- (CGFloat)waterflowLayouOftMarginBetweenColumns:(LMJVerticalFlowLayout *)waterflowLayout
-{
-    return 10;
-}
-
-- (CGFloat)waterflowLayoutOfMarginBetweenLines:(LMJVerticalFlowLayout *)waterflowLayout
-{
-    return 10;
-}
-
-- (UIEdgeInsets)waterflowLayoutOfEdgeInsets:(LMJVerticalFlowLayout *)waterflowLayout
-{
-    return UIEdgeInsetsMake(20, 10, 10, 10);
-}
 
 
 - (instancetype)init
 {
     
-    LMJVerticalFlowLayout *layout = [[LMJVerticalFlowLayout alloc] init];
+    LMJVerticalFlowLayout *layout = [[LMJVerticalFlowLayout alloc] initWithDelegate:self];
 
     if(self = [super initWithCollectionViewLayout:layout])
     {
-        layout.delegate = self;
+        
     }
     
     return self;

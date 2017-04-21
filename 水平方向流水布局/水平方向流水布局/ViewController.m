@@ -67,9 +67,9 @@
 {
     if(_collectionView == nil)
     {
-        LMJHorizontalFlowLayout *myLayout = [[LMJHorizontalFlowLayout alloc] init];
+        LMJHorizontalFlowLayout *myLayout = [[LMJHorizontalFlowLayout alloc] initWithDelegate:self];
         
-        myLayout.delegate = self;
+        
         
         UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:myLayout];
         [self.view addSubview:collectionView];
@@ -84,10 +84,22 @@
     return _collectionView;
 }
 
-- (CGFloat)waterflowLayout:(LMJHorizontalFlowLayout *)waterflowLayout widthForItemAtIndexPath:(NSIndexPath *)indexPath itemHeight:(CGFloat)itemHeight
+
+
+- (CGFloat)waterflowLayout:(LMJHorizontalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView widthForItemAtIndexPath:(NSIndexPath *)indexPath itemHeight:(CGFloat)itemHeight
 {
     
-    return ((arc4random()) % 4 + 1)* itemHeight;
+    return ((arc4random()) % 6 + 1)* itemHeight;
+}
+
+- (CGFloat)waterflowLayout:(LMJHorizontalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView columnsMarginForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.item % 5) {
+        return 30;
+    }else
+    {
+        return 10;
+    }
 }
 
 
