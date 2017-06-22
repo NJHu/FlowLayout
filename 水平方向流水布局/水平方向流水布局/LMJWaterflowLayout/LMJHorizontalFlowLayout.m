@@ -123,7 +123,7 @@ static const UIEdgeInsets LMJ_EdgeInsets_ = {10, 10, 10, 10};
 
 - (CGSize)collectionViewContentSize
 {
-    __block CGFloat maxColW = [self.lmj_LinesWidthArray[0] doubleValue];
+    __block CGFloat maxColW = [self.lmj_LinesWidthArray.firstObject doubleValue];
     
     [self.lmj_LinesWidthArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
