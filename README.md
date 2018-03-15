@@ -1,10 +1,11 @@
 # UICollectionViewLayout各种布局
 
-## 主要是以代理的方式去实现
+### 三种有趣的布局, 线性布局, 圆形布局, 格子布局
+<img src="./images/d1.png" width="33%"><img src="./images/d2.png" width="33%"><img src="./images/d3.png" width="33%">
 
 ### JD京东商城首页布局
 
-<img src="./images/jdHome.png" width="200" height="300">
+<img src="./images/jdHome.png" width="40%">
 
 ```objc
 @class LMJElementsFlowLayout;
@@ -60,7 +61,7 @@
 
 ###  水平流水布局
 
-<img src="./images/HL.png" width="200" height="300">
+<img src="./images/HL.png" width="40%">
 
 ```objc
 @class LMJHorizontalFlowLayout;
@@ -117,7 +118,7 @@
 
 ### 垂直流水布局
 
-<img src="./images/vL.png" width="200" height="300">
+<img src="./images/vL.png" width="44%">
 
 ```objc
 @class LMJVerticalFlowLayout;
@@ -174,10 +175,5 @@
 
 ### 百思不得姐图片流水布局和网络加载
 
-<img src="./images/b1.png" width="200" height="300">
+<img src="./images/b1.png" width="40%"">
 
-
-### 其他布局Demos
-<img src="./images/d1.png" width="200" height="300">
-<img src="./images/d2.png" width="200" height="300">
-<img src="./images/d3.png" width="200" height="300">

@@ -226,7 +226,7 @@ static NSString *const shopId = @"shop";
 
 
 #pragma mark - <LMJVerticalFlowLayoutDelegate>
-- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView heightForItemAtIndexPath:(NSIndexPath *)indexPath itemWidth:(CGFloat)itemWidth
 {
     
     LMJShop *shop = self.shops[indexPath.item];
@@ -239,22 +239,22 @@ static NSString *const shopId = @"shop";
     return height;
 }
 
-- (NSInteger)waterflowLayoutOfColumns:(LMJVerticalFlowLayout *)waterflowLayout
+- (NSInteger)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout columnsInCollectionView:(UICollectionView *)collectionView
 {
     return 3;
 }
 
-- (CGFloat)waterflowLayouOftMarginBetweenColumns:(LMJVerticalFlowLayout *)waterflowLayout
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView linesMarginForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return 10;
 }
 
-- (CGFloat)waterflowLayoutOfMarginBetweenLines:(LMJVerticalFlowLayout *)waterflowLayout
+- (CGFloat)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout columnsMarginInCollectionView:(UICollectionView *)collectionView
 {
     return 10;
 }
 
-- (UIEdgeInsets)waterflowLayoutOfEdgeInsets:(LMJVerticalFlowLayout *)waterflowLayout
+- (UIEdgeInsets)waterflowLayout:(LMJVerticalFlowLayout *)waterflowLayout edgeInsetsInCollectionView:(UICollectionView *)collectionView
 {
     return UIEdgeInsetsMake(20, 10, 10, 10);
 }
@@ -271,11 +271,11 @@ static NSString *const shopId = @"shop";
 - (instancetype)init
 {
     
-    LMJVerticalFlowLayout *layout = [[LMJVerticalFlowLayout alloc] init];
+    LMJVerticalFlowLayout *layout = [[LMJVerticalFlowLayout alloc] initWithDelegate:self];
 
     if(self = [super initWithCollectionViewLayout:layout])
     {
-        layout.delegate = self;
+        
     }
     
     return self;
