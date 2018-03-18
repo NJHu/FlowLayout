@@ -7,6 +7,8 @@
 //
 
 #import "LMJGirdLayout.h"
+#define LMJXX(x) floorf(x)
+#define LMJXS(s) ceilf(s)
 
 @interface LMJGirdLayout ()
 /** 所有的模型数据 */
@@ -67,7 +69,7 @@
     
     UICollectionViewLayoutAttributes *atrb = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
     
-    CGFloat width = self.collectionView.frame.size.width / 2;
+    CGFloat width = LMJXX(self.collectionView.frame.size.width * 0.5);
     
     CGFloat height = width;
     
